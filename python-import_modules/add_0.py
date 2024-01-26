@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/python3
 def add(a, b):
     """My addition function
 
@@ -9,4 +9,4 @@ def add(a, b):
     Returns:
         The return value. a + b
     """
-    return a + b
+    return (a + b)
