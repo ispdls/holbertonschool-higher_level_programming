@@ -10,4 +10,4 @@ def common_elements(set_1, set_2):
         if list2 in temp_list1:
             temp_list2.append(list2)
 
-    return temp_list2    
+    return temp_list2
