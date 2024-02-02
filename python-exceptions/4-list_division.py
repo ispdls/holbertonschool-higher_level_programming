@@ -18,4 +18,5 @@ def list_division(my_list_1, my_list_2, list_length):
     except IndexError:
         print("out of range")
 
-    return result_list
+    finally:
+        return result_list
