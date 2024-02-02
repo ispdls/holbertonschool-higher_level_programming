@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
     result_list = []
 
@@ -7,6 +6,8 @@ def list_division(my_list_1, my_list_2, list_length):
             try:
                 temp_list1 = my_list_1[i]
                 temp_list2 = my_list_2[i]
+                if i < len(my_list_1) or i < len(my_list_2):
+                    i = 0
                 result = temp_list1 / temp_list2
                 result_list.append(result)
             except ZeroDivisionError:
