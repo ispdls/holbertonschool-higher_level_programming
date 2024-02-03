@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+    Insert here module comment
+"""
+
+
 def add_integer(a, b=98):
     """ add two integers or flots """
 
