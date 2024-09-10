@@ -11,5 +11,5 @@ def element_at(my_list, idx):
     else:
         for value in my_list:
             if index == idx:
-                return my_list(idx)
+                return my_list[idx]
             index += 1
