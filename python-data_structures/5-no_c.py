@@ -1,4 +1,4 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 def no_c(my_string):
 
     temp_list = list(my_string)
