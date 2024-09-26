@@ -5,13 +5,8 @@
 
 def lookup(obj):
 
-    # temp_list is the return
-    temp_list = []
+    """Returns the list of available
+    attributes and methods of an object"""
 
-    for value in dir(obj):
-
-        # temp_list store the attributes and methods
-        temp_list.append(value)
-
-    # Return the list
-    return temp_list
+    # return obj args
+    return dir(obj)
