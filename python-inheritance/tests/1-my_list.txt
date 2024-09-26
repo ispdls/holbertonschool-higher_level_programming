@@ -29,9 +29,9 @@ Or a single argument, which must be an iterable object.
 
 ::
 
-    >>> my_list = MyList([1, 2, 3])
+    >>> my_list = MyList([1, 2])
     >>> print(my_list)
-    [1, 2, 3]
+    [1, 2]
 
 ::
 
