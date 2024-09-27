@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+"""
+This module defines classes related to basic geometry.
+
+Classes:
+    BaseGeometry: Base class.
+    Rectangle: Class inherits from BaseGeometry.
+"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
