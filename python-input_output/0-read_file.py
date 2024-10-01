@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 
 """function to read a file"""
