@@ -8,7 +8,11 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 """the file name"""
 file_name = 'add_item.json'
+load_list = []
 """load the file"""
+if load_list is None:
+    load_listoad_list = []
+
 load_list = load_from_json_file(file_name)
 """add the argvs"""
 load_list.extend(sys.argv[1:])
