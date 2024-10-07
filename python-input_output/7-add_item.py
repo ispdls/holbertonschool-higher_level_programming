@@ -10,9 +10,9 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 file_name = 'add_item.json'
 """empty list"""
 load_list = []
-"""load the file first"""
-load_list = load_from_json_file(file_name)
 """add the argvs"""
 load_list.extend(sys.argv[1:])
+"""load the file first"""
+load_list = load_from_json_file(file_name)
 """save the file"""
 save_to_json_file(load_list, file_name)
