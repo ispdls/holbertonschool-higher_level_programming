@@ -7,11 +7,11 @@ def class_to_json(obj):
     """
     argv:
     obj
-    
+
     Return:
     temp_dict
     """
-    if not hasattr(obj, __dict__):
+    if not hasattr(obj, "__dict__"):
         return {}
 
     temp_dict = {}
