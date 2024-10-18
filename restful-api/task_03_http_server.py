@@ -24,6 +24,13 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps(sample_data).encode())
+        
+        elif self.path == '/info':
+            info_data = {"version": "1.0", "description": "A simple API built with http.server"}
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps(info_data).encode())
 
         elif self.path == '/status':
            
@@ -38,8 +45,3 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             self.wfile.write(b"404 Not Found: The requested URL was not found on this server.")
-
-PORT = 8000
-with socketserver.TCPServer(("", PORT), SimpleHTTPRequestHandler) as httpd:
-    print(f"Serving at port {PORT}")
-    httpd.serve_forever()
