@@ -1,5 +1,6 @@
 import requests
 import json
+import csv
 
 """Create a function fetch_and_print_posts() 
 that fetches all post from JSONPlaceholder."""
@@ -15,10 +16,6 @@ def fetch_and_print_posts():
         for data in datas:
             print(data['title'])
 
-
-import requests
-import json
-import csv
 
 """Create a function fetch_and_save_posts() 
 that fetches all post from JSONPlaceholder."""
