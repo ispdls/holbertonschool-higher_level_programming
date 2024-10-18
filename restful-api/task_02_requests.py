@@ -8,9 +8,9 @@ that fetches all post from JSONPlaceholder."""
 
 def fetch_and_print_posts():
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-   
+    print(f'Status Code: {r.status_code}')
     if r.ok:
-        print(r)
+        
         datas = r.json()
 
         for data in datas:
@@ -23,9 +23,9 @@ that fetches all post from JSONPlaceholder."""
 
 def fetch_and_save_posts():
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    
+    posts = r.json()
     if r.ok:
-        posts = r.json()
+      
         dict_post = []
 
         for post in posts:
@@ -47,3 +47,5 @@ def fetch_and_save_posts():
             writer.writeheader()
 
             writer.writerows(dict_post)
+
+fetch_and_print_posts()
