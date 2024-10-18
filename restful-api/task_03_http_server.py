@@ -45,3 +45,8 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             self.wfile.write(b"404 Not Found: The requested URL was not found on this server.")
+
+PORT = 8000
+with socketserver.TCPServer(("", PORT), SimpleHTTPRequestHandler) as httpd:
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
